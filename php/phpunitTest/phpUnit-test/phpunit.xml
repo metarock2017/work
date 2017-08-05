@@ -1,0 +1,7 @@
+<testsuites>
+    <testsuites name="My Test Suite">
+    	<directory>./</directory>
+    	<file>ContainsTest.php</file>
+    	<exclude></exclude>
+    </testsuites>
+</testsuites>

@@ -1,0 +1,8 @@
+<groups>
+	<include>
+		<groups>two</groups>
+	</include>
+	<exclude>
+		<groups>one</groups>
+	</exclude>
+</groups>
