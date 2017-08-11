@@ -1,0 +1,29 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="wechat:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/wechat_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="wechat/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="wechat" />
+          <element id="library" level="project" name="lib" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="D:/java_datas/jar/junit-4.8.2.jar" />
+          <element id="file-copy" path="D:/java_datas/SampleCode/SampleCode/Java/dist/aes-jre1.6.jar" />
+          <element id="file-copy" path="D:/java_datas/json_jar/commons-codec-1.8.jar" />
+          <element id="file-copy" path="D:/java_datas/json_jar/json-lib-2.2.3-jdk15.jar" />
+          <element id="file-copy" path="D:/java_datas/json_jar/commons-logging-1.1.1.jar" />
+          <element id="file-copy" path="D:/java_datas/json_jar/commons-lang-2.3.jar" />
+          <element id="file-copy" path="D:/java_datas/json_jar/commons-collections-3.2.1.jar" />
+          <element id="file-copy" path="D:/java_datas/json_jar/commons-httpclient-3.1.jar" />
+          <element id="file-copy" path="D:/java_datas/json_jar/commons-beanutils-1.7.0.jar" />
+          <element id="file-copy" path="D:/java_datas/json_jar/ezmorph-1.0.3.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/mysql-jdbc.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/json-20170516.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/mysql-connector-java-5.1.18-bin.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
