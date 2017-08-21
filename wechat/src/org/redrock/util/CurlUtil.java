@@ -1,8 +1,18 @@
 package org.redrock.util;
 
+import jdk.nashorn.internal.parser.Token;
+import net.sf.json.JSONArray;
+import net.sf.json.JSONObject;
+import org.apache.commons.httpclient.HttpConnection;
+
 import java.io.*;
 import java.net.*;
+import java.sql.*;
+import java.util.Date;
+import java.util.HashMap;
 import java.util.Map;
+import java.lang.Integer;
+import java.lang.String;
 
 /**
  * 用于curl调用接口，传递参数与获取结果采用输入输出流
@@ -11,11 +21,10 @@ public class CurlUtil {
 
     private static final int DEF_CONN_TIMEOUT = 30000;
     private static final int DEF_READ_TIMEOUT = 30000;
-    private static String userAgent =  "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.66 Safari/537.36";
+    private static String userAgent = "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.66 Safari/537.36";
 
 
     /**
-     *
      * @param strUrl 请求地址
      * @param params 请求参数
      * @param method 请求方法
@@ -49,7 +58,6 @@ public class CurlUtil {
             conn.setReadTimeout(DEF_READ_TIMEOUT);
             conn.setRequestProperty("User-agent", userAgent);
             conn.setInstanceFollowRedirects(false);
-            conn.connect();
             if (!StringUtil.isBlank(method) && method.equalsIgnoreCase("POST")) {
                 conn.setRequestMethod("POST");
                 if (!StringUtil.isBlank(paramStr)) {
@@ -63,6 +71,7 @@ public class CurlUtil {
                     writer.flush();
                 }
             }
+            conn.connect();
             reader = new BufferedReader(
                     new InputStreamReader(
                             conn.getInputStream(), "UTF-8"
@@ -93,12 +102,48 @@ public class CurlUtil {
         }
         return result;
     }
-    public static void main(String[] args) {
-        String url = "http://hongyan.cqupt.edu.cn/MagicLoop/index.php?s=/addon/InquiryExam/InquiryExam/testAtHome&type=qmcj&xh=2016214052";
-        Map<String, Object> params = null;
-        String type = "GET";
-        String str = CurlUtil.getContent(url, params, type);
-        System.out.println(str);
+
+    /**
+     * post传送字符串参数后获取数据
+     * @param url
+     * @param str
+     * @return
+     */
+    public static String postData(String strUrl, String str) {
+        String result = null;
+        try {
+            URL url = new URL(strUrl);
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setRequestMethod("POST");
+            connection.setDoOutput(true);
+            connection.connect();
+            BufferedWriter writer = new BufferedWriter(
+                    new OutputStreamWriter(
+                            connection.getOutputStream(), "UTF-8"
+                    )
+            );
+            writer.write(str);
+            writer.flush();
+            BufferedReader reader = new BufferedReader(
+                    new InputStreamReader(
+                            connection.getInputStream(), "UTF-8"
+                    )
+            );
+            StringBuilder builder = new StringBuilder();
+            String line = null;
+            while ((line = reader.readLine()) != null) {
+                builder.append(line);
+            }
+            writer.close();
+            reader.close();
+            result = builder.toString();
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return result;
     }
+
 }
 
