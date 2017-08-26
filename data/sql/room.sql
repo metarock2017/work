@@ -1,0 +1,5 @@
+INSERT INTO `room` (`id`, `openner`, `room_num`, `total_num`, `wodi_num`, `pingmin_num`, `wodici`, `pingminci`, `expiretime`) VALUES (99, 'oWIiUwOv3mEeHzM-6aUtZiDOtpIU', 7583, 4, 1, 3, '鱼香肉丝', '四喜丸子', 1503841139034);
+INSERT INTO `room` (`id`, `openner`, `room_num`, `total_num`, `wodi_num`, `pingmin_num`, `wodici`, `pingminci`, `expiretime`) VALUES (97, 'oWIiUwKOLKTGup4Y84kQza0hLx_M', 5045, 4, 1, 3, '勇往直前', '全力以赴', 1503841026039);
+INSERT INTO `room` (`id`, `openner`, `room_num`, `total_num`, `wodi_num`, `pingmin_num`, `wodici`, `pingminci`, `expiretime`) VALUES (98, 'oWIiUwCpsoAGjsN-CiRutehnFV9s', 7475, 4, 1, 3, '情人节', '光棍节', 1503841123648);
+INSERT INTO `room` (`id`, `openner`, `room_num`, `total_num`, `wodi_num`, `pingmin_num`, `wodici`, `pingminci`, `expiretime`) VALUES (101, 'oWIiUwEH3ZMbLfcCGtNou_fblGXQ', 2261, 5, 1, 4, '小笼包', '灌汤包', 1503841144403);
+INSERT INTO `room` (`id`, `openner`, `room_num`, `total_num`, `wodi_num`, `pingmin_num`, `wodici`, `pingminci`, `expiretime`) VALUES (102, 'oWIiUwBysQTbpkmDrETI4-clpas8', 5369, 13, 4, 9, '张韶涵', '王心凌', 1503841153986);

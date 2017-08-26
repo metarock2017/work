@@ -1,0 +1,16 @@
+INSERT INTO `pingmin` (`id`, `pingminner`, `pingmin`, `pid`) VALUES (49, 'oWIiUwMvDznd6lANAH3Z1mVeZLmA', 6, 94);
+INSERT INTO `pingmin` (`id`, `pingminner`, `pingmin`, `pid`) VALUES (50, 'oWIiUwOv3mEeHzM-6aUtZiDOtpIU', 5, 94);
+INSERT INTO `pingmin` (`id`, `pingminner`, `pingmin`, `pid`) VALUES (51, 'oWIiUwBysQTbpkmDrETI4-clpas8', 4, 94);
+INSERT INTO `pingmin` (`id`, `pingminner`, `pingmin`, `pid`) VALUES (52, 'oWIiUwATXNyLwfD52IOutX6YAvIU', 3, 94);
+INSERT INTO `pingmin` (`id`, `pingminner`, `pingmin`, `pid`) VALUES (53, 'oWIiUwEH3ZMbLfcCGtNou_fblGXQ', 1, 94);
+INSERT INTO `pingmin` (`id`, `pingminner`, `pingmin`, `pid`) VALUES (54, 'oWIiUwOv3mEeHzM-6aUtZiDOtpIU', 6, 95);
+INSERT INTO `pingmin` (`id`, `pingminner`, `pingmin`, `pid`) VALUES (55, 'oWIiUwMvDznd6lANAH3Z1mVeZLmA', 5, 95);
+INSERT INTO `pingmin` (`id`, `pingminner`, `pingmin`, `pid`) VALUES (56, 'oWIiUwBysQTbpkmDrETI4-clpas8', 2, 95);
+INSERT INTO `pingmin` (`id`, `pingminner`, `pingmin`, `pid`) VALUES (57, 'oWIiUwNSvhCqselqL2U4wnlI3Tfc', 1, 95);
+INSERT INTO `pingmin` (`id`, `pingminner`, `pingmin`, `pid`) VALUES (58, 'oWIiUwOv3mEeHzM-6aUtZiDOtpIU', 5, 96);
+INSERT INTO `pingmin` (`id`, `pingminner`, `pingmin`, `pid`) VALUES (59, 'oWIiUwEH3ZMbLfcCGtNou_fblGXQ', 4, 96);
+INSERT INTO `pingmin` (`id`, `pingminner`, `pingmin`, `pid`) VALUES (60, 'oWIiUwBysQTbpkmDrETI4-clpas8', 3, 96);
+INSERT INTO `pingmin` (`id`, `pingminner`, `pingmin`, `pid`) VALUES (61, 'oWIiUwMvDznd6lANAH3Z1mVeZLmA', 2, 96);
+INSERT INTO `pingmin` (`id`, `pingminner`, `pingmin`, `pid`) VALUES (62, 'oWIiUwFNBwBHi07hP8PocJ7KhqyM', 4, 97);
+INSERT INTO `pingmin` (`id`, `pingminner`, `pingmin`, `pid`) VALUES (63, 'oWIiUwEH3ZMbLfcCGtNou_fblGXQ', 2, 97);
+INSERT INTO `pingmin` (`id`, `pingminner`, `pingmin`, `pid`) VALUES (64, 'oWIiUwNSvhCqselqL2U4wnlI3Tfc', 1, 97);
